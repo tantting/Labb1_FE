@@ -3,7 +3,40 @@ nav li:nth-of-type(4) a {
 }
 
 main {
-    background-color: #FFF9F2;
-    color: #AC6532;
-    flex: 1;
+    background-color: transparent;
+}
+
+.container{
+    background-color: #CED6DAB3;
+    color: #493222FF;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "   Competencies    Experiences     Experiences    Experiences      Experiences"
+    "   Languages       Experiences     Experiences    Experiences      Experiences"
+    ;
+}
+
+.aside1{
+    grid-area: Competencies;
+    padding: 1em;
+}
+
+.aside2{
+    grid-area: Languages;
+    padding: 1em;
+}
+
+.main {
+    grid-area: Experiences;
+    padding: 1em;
+}
+
+h1 {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
