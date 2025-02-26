@@ -1,3 +1,123 @@
 nav li:nth-of-type(5) a {
     text-decoration: underline;
 }
+
+h1 {
+    padding: 4rem 0 0 4rem;
+    font-size: 2em;
+    width: 100%;
+}
+
+main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+main ul li {
+    flex: 1;
+    flex-basis: 30%;
+    padding: 2rem;
+    border: #493222 solid;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+    margin: 2rem;
+}
+
+main ul li h2 {
+    padding-bottom: 1em;
+    font-size: larger;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 6/4;
+    margin-bottom: 1em;
+}
+
+main ul li a {
+    text-decoration: none;
+    color: #493222;
+    font-style: italic;
+}
+
+.button {
+    display: block;
+    margin-top: 1em;
+
+}
+
+.modal-toggle {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 4em;
+    /* move the left positon of the modal 50% of the parent size */
+    left: 50%;    
+    /* adjust the left position with half the size of the element, in this case .modal */
+    transform: translateX(-50%);
+    background-color: transparent;
+    width: auto;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.modal-toggle:checked + .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #FFF9F2;
+    color: #AC6532;
+    padding: 2em;
+    max-width: 70%;
+    max-height: 50%;
+    /*if the content is to long to fit within max width and height, a scroll function is added*/
+    overflow: auto;
+    border-radius: 3%;
+    text-align: center;
+    position: relative;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+    border: #AC6532 solid;
+}
+
+.modal-content h2 {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+/* Close button styling */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 560px) {
+    main ul li {
+            flex-basis: 60%;
+        }
+        h1 {
+            font-size: 1.5em;
+            padding: 3em 0 0 0;
+            text-align: center;
+        }
+}

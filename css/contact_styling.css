@@ -1,3 +1,41 @@
 nav li:nth-of-type(3) a {
     text-decoration: underline;
 }
+
+main {
+    padding: 5em;
+    height: 100%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main ul {
+    padding: 0;
+}
+
+main ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    margin-bottom: 1rem; 
+}
+
+.icons {
+    /* flex: 0 0 50px; */
+    width: 3rem;
+    height: 3rem;
+}
+
+main ul li div {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+main ul li div h2, p{
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+}
+

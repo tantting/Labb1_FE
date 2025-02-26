@@ -4,18 +4,18 @@ nav li:nth-of-type(4) a {
 
 .container{
     height: 100vh;
-    gap: 0 2.5em;
+    gap: 0 3em;
     padding: 2.5rem;
     display: grid;
     grid-template-rows: repeat(6, auto);
     grid-template-columns: minmax(100px, 1fr) minmax(25% 1fr) auto;
     grid-template-areas: 
-    "   hard    header         header "
-    "   hard    date1           position1"
-    "   hard    date2           position2"
-    "   soft       date3           position3"
-    "   soft       date4           position4"
-    "   soft       date5           position5"
+    "   hard    header     header "
+    "   hard    date1      position1"
+    "   hard    date2      position2"
+    "   soft    date3      position3"
+    "   soft    date4      position4"
+    "   soft    date5      position5"
     ;
 }
 
@@ -151,7 +151,7 @@ main ul {
     width: 30%;
 }
 
-@media  screen and (max-width: 720px){
+@media screen and (max-width: 720px){
     .container {
         grid-template-rows: repeat(11, auto);
         grid-template-columns: 1.25fr auto;
