@@ -7,9 +7,10 @@ nav li:nth-of-type(4) a {
     gap: 0 3em;
     padding: 2.5rem;
     display: grid;
-    grid-template-rows: repeat(6, auto);
+    grid-template-rows: repeat(7, auto);
     grid-template-columns: minmax(100px, 1fr) minmax(25% 1fr) auto;
-    grid-template-areas: 
+    grid-template-areas:
+    "   head1   head1      head1"
     "   hard    header     header "
     "   hard    date1      position1"
     "   hard    date2      position2"
@@ -17,6 +18,13 @@ nav li:nth-of-type(4) a {
     "   soft    date4      position4"
     "   soft    date5      position5"
     ;
+}
+
+.head1 {
+    grid-area: head1;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .hardSkills{
@@ -153,20 +161,21 @@ main ul {
 
 @media screen and (max-width: 720px){
     .container {
-        grid-template-rows: repeat(11, auto);
+        grid-template-rows: repeat(12, auto);
         grid-template-columns: 1.25fr auto;
         grid-template-areas:
+                "   head1   head1       "
                 "   hard    header      "
                 "   hard    date1       "
                 "   hard    position1   "
                 "   hard    date2       "
                 "   hard    position2   "
                 "   hard    date3       "
-                "   soft       position3   "
-                "   soft       date4       "
-                "   soft       position4   "
-                "   soft       date5       "
-                "   soft       position5   "
+                "   soft    position3   "
+                "   soft    date4       "
+                "   soft    position4   "
+                "   soft    date5       "
+                "   soft    position5   "
             ;
     }
     .date {
@@ -182,6 +191,7 @@ main ul {
         grid-template-rows: repeat(13, auto);
         grid-template-columns: auto;
         grid-template-areas:
+            "   head1       "
             "   header      "
             "   date1       "
             "   position1   "
@@ -193,8 +203,8 @@ main ul {
             "   position4   "
             "   date5       "
             "   position5   "
-            "   hard  "
-            "   soft   "
+            "   hard        "
+            "   soft        "
         ;
     }
 
