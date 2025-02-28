@@ -39,3 +39,12 @@ main ul li div h2, p{
     font-size: smaller;
 }
 
+@media (max-width: 500px) {
+    main {
+        padding: 4em 2em;
+    }
+    h1 {
+        font-size: 1.25em;
+        margin-bottom: 2em;
+    }
+}
